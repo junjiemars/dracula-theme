@@ -433,15 +433,16 @@
                                  (((type graphic))
                                   ,(expand-for-graphic spec)))))))))
 
-;;;###autoload
-(when load-file-name
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+;; ;;;###autoload
+;; (when load-file-name
+;;   (add-to-list 'custom-theme-load-path
+;;                (file-name-as-directory (file-name-directory load-file-name))))
+
 
 (provide-theme 'dracula)
 
 ;; Local Variables:
-;; no-byte-compile: t
+;; no-byte-compile: nil
 ;; End:
 
 ;;; dracula-theme.el ends here
